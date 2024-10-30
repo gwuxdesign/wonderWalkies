@@ -74,6 +74,11 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.8;
+    display: block;
+}
+
+.showcase .bgimage {
+    display: none;
 }
 
 .overlay {
@@ -162,5 +167,20 @@
 
     .text h2 {
         font-size: 3em;
+    }
+
+    .showcase video {
+        display: none;
+    }
+
+    .showcase .bgimage {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+        display: block;
     }
 }
