@@ -97,6 +97,7 @@
 .text {
     position: relative;
     z-index: 10;
+    margin-top: 25px;
 }
 
 .text h2 {
@@ -206,15 +207,44 @@ a {
     color: #fff;
 }
 
-@media(max-width: 798px) {
-    .showcase, .showcase header {
-        padding: 40px;
-    }
+form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
 
-    .text h2 {
-        font-size: 3em;
-    }
+label {
+    font-size: 1.25em;
+    font-weight: 400;
+}
 
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    height: 10em;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    line-height: 50px;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+@media(max-width: 768px) {
     .showcase video {
         display: none;
     }
@@ -224,9 +254,44 @@ a {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 100%;
         object-fit: cover;
         opacity: 0.8;
         display: block;
+    }
+
+    .text {
+        height: 80vh;
+        overflow: auto;
+    }
+
+    .text p {
+        font-size: 1.3em;
+    }
+
+    .text p.review {
+        max-width: 100%;
+    }
+
+    table.services td > img {
+        width: 70%;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .showcase, .showcase header {
+        padding: 40px;
+    }
+
+    .showcase .bgimage {
+        height: 100%;
+    }
+
+    .text {
+        height: 60vh;
+    }
+
+    table.services td > img {
+        width: 80%;
     }
 }
