@@ -261,7 +261,8 @@ button[type="submit"]:hover {
 
     .text {
         height: 80vh;
-        overflow: auto;
+        overflow-y: auto;
+        margin-top: 0;
     }
 
     .text p {
@@ -288,7 +289,7 @@ button[type="submit"]:hover {
     }
 
     .text {
-        height: 55vh;
+        height: 60vh;
     }
 
     table.services td > img {
